@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FOSS-Calculator</title>
+	<link href="stylsheet.css" rel="stylesheet">
+	<script type="module" src="calculator_logic.js"></script>
+	<script type="module" src="theme_toggle.js"></script>
+</head>
+
+<body>
+	<button id="theme-toggle">☾☼ Toggle Light/Dark Mode</button>
+
+	<h1>FOSS Calculator</h1>
+
+	<div class="calculator-box">
+
+		<div class="result-box" id="result">0</div>
+
+		<div class="clear-box">
+			<button onclick="clearRes()" class="clear-button" id="clear">clr</button>
+			<button onclick="del()" class="delete-button" id="del">⌫</button>
+		</div>
+
+		<div class="buttons-container">
+
+			<div class="numpad-box">
+				<button onclick="appendNum('7')" class="numpad-button" id="7">7</button>
+				<button onclick="appendNum('8')" class="numpad-button" id="8">8</button>
+				<button onclick="appendNum('9')" class="numpad-button" id="9">9</button>
+				<button onclick="appendNum('4')" class="numpad-button" id="4">4</button>
+				<button onclick="appendNum('5')" class="numpad-button" id="5">5</button>
+				<button onclick="appendNum('6')" class="numpad-button" id="6">6</button>
+				<button onclick="appendNum('1')" class="numpad-button" id="1">1</button>
+				<button onclick="appendNum('2')" class="numpad-button" id="2">2</button>
+				<button onclick="appendNum('3')" class="numpad-button" id="3">3</button>
+				<button onclick="appendNum('0')" class="numpad-button" id="0">0</button>
+				<button onclick="appendNum('.')" class="numpad-button" id="dot">.</button>
+				<button onclick="calcRes()" class="equals-button" id="equal">=</button>
+			</div>
+
+			<div class="operators-box">
+				<button onclick="appendOp('/')" class="operator-button" id="div">÷</button>
+				<button onclick="appendOp('*')" class="operator-button" id="mul">×</button>
+				<button onclick="appendOp('-')" class="operator-button" id="sub">-</button>
+				<button onclick="appendOp('+')" class="operator-button" id="add">+</button>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
