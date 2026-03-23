@@ -2,7 +2,7 @@
 
 In this workshop, we will create a simple calculator website.
 
-![calculator-page]("./img/foss_calculator_page.png")
+![calculator-page](./imgs/foss_calculator_page.png)
 
 ## Project Structure
 
